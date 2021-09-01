@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(185, 75%, 39%);
+}
+
+.font-18 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.age {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.light-grey {
+  color: hsl(0, 0%, 59%);
+}
+
+.profile-card {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 1;
+  width: auto;
+}
+
+.pattern-card {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.person-info {
+  position: relative;
+  bottom: 60px;
+} 
+
+.victor {
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-bottom: 10px;
+}
+
+.person-statistics {
+  display: grid;
+  grid-template-columns: repeat(3, 50px);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  position: relative;
+  bottom: 20px;
+  gap: 5px 50px;
+  padding-top: 20px;
+  border-top: 1px solid hsl(0, 0%, 89%);
+  width: 100%;
+}
+
+.top {
+  position: relative;
+  top: -450px;
+  left: 200px;
+}
+
+.bottom {
+  position: relative;
+  bottom: -350px;
+  right: 150px;
+}
+
+@media screen and (min-width: 1000px) {
+  .top {
+    position: relative;
+    top: -450px;
+    left: 200px;
+  }
+
+  .bottom {
+    position: relative;
+    bottom: -450px;
+    right: 150px;
+  }
+}
