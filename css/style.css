@@ -6,10 +6,12 @@
 }
 
 body {
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
 }
 
 .font-18 {
@@ -36,6 +38,8 @@ body {
   text-align: center;
   z-index: 1;
   width: auto;
+  position: relative;
+  bottom: 180px;
 }
 
 .pattern-card {
@@ -82,13 +86,18 @@ body {
 @media screen and (min-width: 1000px) {
   .top {
     position: relative;
-    top: -450px;
-    left: 200px;
+    top: -530px;
+    left: 150px;
   }
 
   .bottom {
     position: relative;
-    bottom: -450px;
+    bottom: -300px;
     right: 150px;
+  }
+
+  .profile-card {
+    position: relative;
+    bottom: 150px;
   }
 }
